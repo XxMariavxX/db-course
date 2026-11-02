@@ -14,9 +14,9 @@
 SELECT 
     pst.first_name || ' ' || pst.last_name AS student_name,
     sg.group_name,
-	  c.course_name,
-	  e.grade,
-	  ppr.first_name || ' ' || ppr.last_name AS lecturer_name
+    c.course_name,
+    e.grade,
+    ppr.first_name || ' ' || ppr.last_name AS lecturer_name
 FROM enrolment e 
 INNER JOIN student st ON st.student_id = e.student_id
 INNER JOIN course c ON c.course_id = e.course_id
